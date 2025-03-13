@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+    background-image: radial-gradient(rgba(168, 168, 168, 0.425) 1.5px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    height: 30vw;
+    width: 25vw;
+    background-color: white;
+    padding: 1.5vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+    border-radius: 1vw;
+    box-shadow: 0px 2px 20px rgba(131, 131, 131, 0.623);
+}
+.wrapper h1{
+    font-size: 3vw;
+    font-weight: 600;
+    color: #181817;
+    margin-top: 1vw;
+}
+.wrapper h3{
+    font-size: 1.5vw;
+    font-weight: 200;
+    color: #181817d0;
+    margin-top: 1vw;
+}
+.img-div{
+    height: 13vw;
+    width: 13vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3), 
+              -3px 3px 5px rgba(0, 0, 0, 0.3), 
+              0px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1vw;
+    overflow: hidden;
+}
+.img-div img{
+    height: 100%;
+    width: 100%;
+}
+.socials{
+    height: 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials i{
+    color: #181817;
+    font-size: 2.5vw;
+}
+
+@media (max-width:600px) {
+    .wrapper{
+        height: 75vw;
+        width: 60vw;
+        padding: 4vw 8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper h1{
+        font-size: 7vw;
+        margin-top: 6vw;
+    }
+    .wrapper h3{
+        font-size: 4vw;
+        font-weight: 200;
+        color: #181817d0;
+        margin-top: 5vw;
+    }
+    .img-div{
+        height: 28vw;
+        width: 28vw;
+    }
+    .socials{
+        height: 7vw;
+        width: 100%;
+        margin-top: 2vw;
+    }
+    .socials i{
+        color: #181817;
+        font-size: 6vw;
+    }
+}
